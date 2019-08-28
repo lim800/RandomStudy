@@ -1,0 +1,9 @@
+package lim.spring.test;
+
+public class BeanCon {
+	
+	public BeanCon() {
+		System.out.println("생성자 호출");
+	}
+
+}

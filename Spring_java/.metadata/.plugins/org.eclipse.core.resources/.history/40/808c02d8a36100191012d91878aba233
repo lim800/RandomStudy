@@ -1,0 +1,7 @@
+package lim.spring.test.java;
+
+public class ParameterBean {
+	
+	private Parameter parameter;
+
+}

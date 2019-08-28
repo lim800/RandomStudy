@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+/Users/lesson6_mac/spring-workspace/spring_java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3415649828.index
+/Begin/src/main/java

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 이름 확인 </title>
+<script type="text/javascript">
+function validateForm() {
+	var x = document.forms["myForm"]["fname"].value
+	if (x == null || x == "") {
+		alert("이름을 적으세요.");
+		return false;
+	}
+}
+
+</script>
+</head>
+<body>
+<form action="#" name="myForm" onsubmit="validateForm()" method="get">
+	이름 <input type="text" name="fname">
+		<input type="submit" value="전송">
+
+</form>
+</body>
+</html>

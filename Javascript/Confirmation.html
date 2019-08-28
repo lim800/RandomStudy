@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>객체 확인</title>
+<script type="text/javascript">
+	function Click() {
+		var str;
+		str = "이름: " + web.name.value + "<br/>";
+		str += "메일: " + web.mail.value + "<br/>";
+		str += web.sane.value + "번으로 저장되었습니다.";
+		alert(str);
+	}
+</script>
+</head>
+<body>
+	<form name="web">
+		<input type="hidden" name="sane" value="imb"> 
+	이름 : <input	type="text" name="name"><br /> 
+	메일 : <input type="text"	name="mail"><br /><br /> 
+		<input type="button" value="확인" onclick="Click()">
+	</form>
+</body>
+</html>

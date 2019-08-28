@@ -1,0 +1,12 @@
+package lim.spring.test.java;
+
+public class JavaCall {
+	
+	public static void main(String[] args) {
+		
+		Begin begin = null;
+		begin = Begin.getInstance();
+		begin.getMess();
+	}
+
+}

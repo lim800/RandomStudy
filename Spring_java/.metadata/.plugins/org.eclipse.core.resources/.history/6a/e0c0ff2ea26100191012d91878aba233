@@ -1,0 +1,10 @@
+package lim.spring.test.java;
+
+public class Parameter {
+	private String name;
+	
+	public Parameter() {
+		
+	}
+
+}

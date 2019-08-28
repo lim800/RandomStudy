@@ -1,0 +1,24 @@
+package lim.spring.test.java;
+
+public class Parameter {
+	private String name;
+
+	public Parameter() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public int insert() {
+		System.out.println("insert calling");
+		return 0;
+	}
+	
+	
+
+
+	public Parameter(String name) {
+		super();
+		this.name = name;
+	}
+	
+
+}

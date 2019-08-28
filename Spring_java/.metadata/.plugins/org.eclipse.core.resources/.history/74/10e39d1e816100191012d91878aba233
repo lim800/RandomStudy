@@ -1,0 +1,14 @@
+package lim.spring.test;
+
+import org.springframework.core.io.FileSystemResource;
+
+public class MeBeanCall {
+	
+	public static void main(String[] args) {
+		//설정파일 호출
+		FileSystemResource fileSystemResource = new FileSystemResource("in/bean.xml");
+		
+		
+		
+	}
+}

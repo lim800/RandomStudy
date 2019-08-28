@@ -1,0 +1,15 @@
+package lim.spring.test.java;
+
+public class ParameterBean {
+	
+	private Parameter parameter;
+
+	public Parameter getParameter() {
+		return parameter;
+	}
+
+	public void setParameter(Parameter parameter) {
+		this.parameter = parameter;
+	}
+
+}

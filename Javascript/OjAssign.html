@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>원형을 객체에 할당</title>
+<script type="text/javascript">
+	var people = {};
+	people.name = "홍길동";
+
+	people.sayName = function() {
+		document.write(this.name + "<br>");
+	}
+
+	people.getName = function() {
+		return this.name;
+	}
+
+	people.sayInfo = function() {
+		document.write(this.getName() + "님 반갑습니다." + "<br>");
+	}
+
+	people.sayName();
+	people.sayInfo();
+</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>

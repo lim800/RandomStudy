@@ -1,0 +1,14 @@
+package lim.spring.test.java;
+
+public class Begin {
+	private static Begin begin;
+	
+	public static begin getInstance() {
+		if (begin==null) {
+			begin = new Begin();
+		}
+		
+		return begin;
+	}
+
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="lim.a.b">
+	<select id="selectAll" resultType="lim.a.b.dto.DTO">
+		select
+		deptno, dname, loc
+		from dept
+	</select>
+
+	<insert id="insert" parameterType="lim.a.b.dto.DTO">
+		insert
+		into dept (deptno,
+		dname, loc)
+		values(#{deptno},#{dname},#{loc})
+	</insert>
+
+	<select id="select" resultType="lim.a.b.dto.DTO">
+		select
+		deptno, dname, loc
+		from dept
+		where deptno = #{deptno}
+	</select>
+
+	<update id="update" parameterType="lim.a.b.dto.DTO">
+		update
+		dept set dname=#{dname}, loc=#{loc}
+		where deptno=#{deptno}
+	</update>
+
+	<delete id="delete" parameterType="lim.a.b.dto.DTO"> 
+		delete
+		from dept
+		where deptno=#{deptno}
+	</delete>
+
+</mapper>

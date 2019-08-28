@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/Users/lesson6_mac/spring-workspace/spring_java/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+979262284.index
+3415649828.index
+3166138491.index
+2444795692.index
+487031228.index
+8077306.index
+2450012957.index

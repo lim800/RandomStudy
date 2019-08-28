@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+<Resource
+name = "jdbc/mysql"
+auth = "Container"
+type = "javax.sql.DataSource"
+driverClassName = "com.mysql.cj.jdbc.Driver"
+factory = "org.apache.commons.dbcp2.BasicDataSourceFactory"
+url = "jdbc:mysql://localhost:3306/scott?characterEncoding=UTF-8&amp;serverTimezone=UTC"
+username = "root"
+password = "qwer1234"
+maxIdle = "100" 
+/>
+
+</Context>

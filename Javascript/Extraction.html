@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>추출하기</title>
+<script type="text/javascript">
+	var url = "http://www.iedu.or.kr/index.asp";
+	document.write("문자열 : " + url + "<br>");
+	var doubleSlash = url.indexOf("//");
+	var slash = url.indexOf("/", doubleSlash + 3);
+	var domain = url.substring(doubleSlash + 3, slash);
+	document.write("도메인: " + domain);
+</script>
+</head>
+<body>
+
+</body>
+</html>

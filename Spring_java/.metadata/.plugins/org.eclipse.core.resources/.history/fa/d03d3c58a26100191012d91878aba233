@@ -1,0 +1,10 @@
+package lim.spring.test.java;
+
+public class ParaCall {
+	public static void main(String[] args) {
+		
+		Parameter parameter = new Parameter();
+		System.out.println(parameter);
+	}
+
+}

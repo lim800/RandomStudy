@@ -1,0 +1,23 @@
+package lim.spring.test.java;
+
+public class Parameter {
+	private String name;
+
+	public Parameter() {
+	}
+	
+	public int insert() {
+		System.out.println("insert calling");
+		return 0;
+	}
+	
+	
+
+
+	public Parameter(String name) {
+		super();
+		this.name = name;
+	}
+	
+
+}

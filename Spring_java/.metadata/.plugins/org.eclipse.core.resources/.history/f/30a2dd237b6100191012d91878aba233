@@ -1,0 +1,9 @@
+package lim.spring.test;
+
+public class DeBean {
+	
+	public void callKr (String name) {
+		syso
+	}
+
+}

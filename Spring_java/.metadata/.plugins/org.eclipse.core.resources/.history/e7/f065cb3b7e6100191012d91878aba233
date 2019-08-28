@@ -1,0 +1,11 @@
+package lim.spring.test;
+
+public class MeBeanCall {
+	
+	public static void main(String[] args) {
+		MeBean meBean = new MeBeankr();
+		meBean.call("홍길동");
+		MeBean meBean1 = new meBeanen();
+		meBean.call("홍길동");
+	}
+}

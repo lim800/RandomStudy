@@ -1,0 +1,12 @@
+package lim.spring.test.java;
+
+public class ParaCall {
+	public static void main(String[] args) {
+		
+		Parameter parameter = new Parameter();
+		parameter.setName("홍길동");
+		
+		System.out.println(parameter.getName());
+	}
+
+}

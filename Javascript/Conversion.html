@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문자열 변환</title>
+<script type="text/javascript">
+	function myfunction() {
+		var str = document.getElementById("de").innerHTML;
+		var txt = str.replace("visit", "방문");
+		document.getElementById("de").innerHTML = txt;
+	}
+</script>
+</head>
+<body>
+	<button onclick="myfunction()">글자 교체</button>
+	<p id="de">please visit 경영기술개발원</p>
+
+</body>
+</html>

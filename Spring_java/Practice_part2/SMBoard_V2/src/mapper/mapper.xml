@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.Dept">
+
+<select id="getBoardList" parameterType="Hashmap" resultType="hyeon.board.smboard.model.BoardVO">
+
+select * 
+	from (select rownum  rnum,num,name,subject,content, attached_file,answer_num,answer_lev,answer_seq,read_count,write_date
+			from (select * from jboard order by answer_num desc,answer_seq asc))
+<![CDATA[
+
+			where rnum>=#{startArticleNum} and rnum<=#{endArticleNum}
+
+]]>
+
+</select>
+
+<select id="getTotalNum"  resultType="int">
+
+<![CDATA[
+
+select count(*) from jboard
+
+]]>
+
+</select>
+
+
+
+<select id="getSearchTotalNum" parameterType="Hashmap" resultType="hyeon.board.smboard.model.BoardVO">
+<![CDATA[
+
+select count(*) from jboard
+where 1=1
+
+]]>
+
+<if test ="keyword != null and type.equals('all')">
+and (subject like '% #{keyword}%' ) or ( name like ''% #{keyword}%') or ( content like '% #{keyword}%')
+</if>
+
+<if test ="keyword != null and type.equals('subject')">
+and (subject like '% #{keyword}%' ) 
+</if>
+
+<if test ="keyword != null and type.equals('name')">
+and (name like '% #{keyword}%' )
+</if>
+
+<if test ="keyword != null and type.equals('content')">
+and (content like '% #{keyword}%' ) 
+</if>
+
+
+</select>
+
+<select id="searchArticle"  parameterType="HashMap" resultType="hyeon.board.smboard.model.BoardVO">
+
+select * 
+	from (select rownum rnum,num,name,subject,content, attached_file,answer_num,answer_lev,answer_seq,read_count,write_date
+		 	from (select * from jboard order by answer_num desc, answer_seq asc)
+		 	where 1 = 1 
+			<if test ="keyword != null and type.equals('all')">
+			and (subject like '% #{keyword} %' ) or ( name like '% #{keyword} %') or ( content like '% #{keyword} %')
+			</if>
+			
+			<if test ="keyword != null and type.equals('name')">
+			and (name like '% #{keyword} %' )
+			</if>
+			
+			<if test ="keyword != null and type.equals('subject')">
+			and (subject like '% #{keyword} %' ) 
+			</if>
+			
+			<if test ="keyword != null and type.equals('content')">
+			and (content like '% #{keyword} %' ) 
+			</if>
+
+		
+<![CDATA[
+	 )	
+	 where rnum >= #{ startArticleNum } 
+	 and rnum <= #{ endArticleNum }
+]]>
+</select>
+
+<select id="getMaxNum"  resultType="int">
+
+<![CDATA[
+
+select NVL(max(num), 0) from jboard
+
+]]>
+
+</select>
+
+
+<insert id="getBoardInsert" parameterType="hyeon.board.smboard.model.BoardVO" >
+
+<![CDATA[
+
+	insert 
+	into jboard (num,name,pass,subject,content,attached_file, answer_num, answer_lev, answer_seq, read_count, write_date)
+	values(#{num},#{name},#{pass},#{subject},#{content},#{attached_file},#{num},0,0,0,sysdate)
+
+]]>
+
+</insert>
+
+</mapper>

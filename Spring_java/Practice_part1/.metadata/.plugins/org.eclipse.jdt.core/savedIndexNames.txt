@@ -1,0 +1,11 @@
+INDEX VERSION 1.131+/Users/lesson6_mac/spring-workspace/spring_jv/.metadata/.plugins/org.eclipse.jdt.core
+643503359.index
+1788916854.index
+2660330571.index
+114332036.index
+600951544.index
+947393779.index
+3851375346.index
+1859192087.index
+1975680957.index
+2503735139.index

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ready handler</title>
+<script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
+<style type="text/css">
+span {
+	font-size: 30pt;
+}
+.red {
+	color: #f00;
+}
+.italic {
+	font-style: italic;
+}
+
+</style>
+
+<script type="text/javascript">
+	
+	$(document).ready(myfunc);
+	function myfunc() {
+		$("span").addClass("red");
+	}
+
+	
+	$(document).ready(function() {
+		$("span").addClass("italic");
+	});
+	
+
+</script>
+
+</head>
+<body>
+	<span> Simple </span>
+</body>
+</html>
