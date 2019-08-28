@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Hi, this is Jungju Lim.
 
 This is a repository for studying of data science.
@@ -9,3 +10,7 @@ Although some files are not organized well, I just wanted to keep the all files 
 Maybe I will organize them someday.. but maybe not.
 
 Bye TEAM.
+=======
+# RandomStudy
+random studying regarding data science
+>>>>>>> 58dc57421e4892e88e75d05617d53060936895f9
