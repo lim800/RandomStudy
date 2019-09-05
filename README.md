@@ -12,5 +12,3 @@ Maybe I will organize them someday.. but maybe not.
 Bye TEAM.
 =======
 # RandomStudy
-random studying regarding data science
->>>>>>> 58dc57421e4892e88e75d05617d53060936895f9
