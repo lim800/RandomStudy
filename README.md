@@ -7,6 +7,5 @@ The files in each folder contain what I have learned regarding data science so f
 
 Some files in this repository are not organized well, so please kindly understand it.
 
-Thanks, TEAM.
 =======
 # RandomStudy
